@@ -1,0 +1,13 @@
+/*plugin para VSCode autoprefixer*/
+section{
+    background-color: goldenrod;
+    height: 600px;
+
+    display: -webkit-box; /*chrome - safari*/
+    display: -ms-flexbox; /*internet - explorer*/
+    display: flex;
+}
+article{
+    outline: 1px solid red;
+    width: 50%;
+}
