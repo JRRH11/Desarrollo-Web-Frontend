@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - Ejercicio  </title>
+    <style>
+       /* selectores nth-child */
+       /* clases= . */
+       /* id = # */
+       .selector1 :nth-child(4){
+           color: green;
+       }
+       .selector1 :nth-child(6){
+           color: blue;
+       }
+       .selector2 :first-child{
+           color: tomato;
+       }
+       .selector2 :last-child{
+           color: tomato;
+       }
+       /* pares */
+       .selector3 :nth-child(even){
+        background-color: yellow;
+       }
+       /* impares */
+       .selector3 :nth-child(odd){
+        background-color: blueviolet;
+       }
+
+       .selector4 :nth-last-child(5){
+        color: red;
+       }
+       .selector4 :nth-last-child(3){
+        color: blue;
+       }
+
+       /* primer elemento de su tipo */
+       .selector5 p:first-of-type{
+           color: gold;
+       }
+
+       /* ultimo elemento de su tipo */
+       .selector5 p:last-of-type{
+           color: orangered;
+       }
+
+       /* seleccionamos a todos los elementos menos al ultimo */
+       .selector5 p:not(:last-child){
+           background-color: #E13549;
+       }
+
+       /* seleccionamos el elemento vacio  */
+       .selector3 li:empty{
+           color: green;
+       }
+
+       /* seleccionar la primera linea del primer elemento */
+       .selector6 :first-child:first-line{
+           color: red   ;
+       }
+       /* seleccionar la primer letra */
+       .selector6 :first-child:first-letter{
+           font-size: 42px;
+       }
+    </style>
+</head>
+<body>
+    <!-- article.selector$*5 -->
+    <article class="selector1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum ex quis aspernatur quos quisquam dolore in, voluptates aut quae totam ipsam vitae esse, velit ipsa ad amet ea repudiandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum ex quis aspernatur quos quisquam dolore in, voluptates aut quae totam ipsam vitae esse, velit ipsa ad amet ea repudiandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum ex quis aspernatur quos quisquam dolore in, voluptates aut quae totam ipsam vitae esse, velit ipsa ad amet ea repudiandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum ex quis aspernatur quos quisquam dolore in, voluptates aut quae totam ipsam vitae esse, velit ipsa ad amet ea repudiandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum ex quis aspernatur quos quisquam dolore in, voluptates aut quae totam ipsam vitae esse, velit ipsa ad amet ea repudiandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum ex quis aspernatur quos quisquam dolore in, voluptates aut quae totam ipsam vitae esse, velit ipsa ad amet ea repudiandae.</p>
+    </article>
+    <br>
+    <br>
+    <article class="selector2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quos labore pariatur repellendus perferendis, consequuntur, laudantium magni, similique velit excepturi consequatur minus laboriosam at. Dolorem sunt veniam rerum excepturi atque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quos labore pariatur repellendus perferendis, consequuntur, laudantium magni, similique velit excepturi consequatur minus laboriosam at. Dolorem sunt veniam rerum excepturi atque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quos labore pariatur repellendus perferendis, consequuntur, laudantium magni, similique velit excepturi consequatur minus laboriosam at. Dolorem sunt veniam rerum excepturi atque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quos labore pariatur repellendus perferendis, consequuntur, laudantium magni, similique velit excepturi consequatur minus laboriosam at. Dolorem sunt veniam rerum excepturi atque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quos labore pariatur repellendus perferendis, consequuntur, laudantium magni, similique velit excepturi consequatur minus laboriosam at. Dolorem sunt veniam rerum excepturi atque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quos labore pariatur repellendus perferendis, consequuntur, laudantium magni, similique velit excepturi consequatur minus laboriosam at. Dolorem sunt veniam rerum excepturi atque.</p>
+    </article>
+    <br>
+    <br>
+    <ul class="selector3">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nam! Voluptatibus voluptas error autem officiis deserunt quasi minus repellendus, doloribus, accusamus qui dolor facilis officia veritatis dolorum? Esse, eveniet vel!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nam! Voluptatibus voluptas error autem officiis deserunt quasi minus repellendus, doloribus, accusamus qui dolor facilis officia veritatis dolorum? Esse, eveniet vel!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nam! Voluptatibus voluptas error autem officiis deserunt quasi minus repellendus, doloribus, accusamus qui dolor facilis officia veritatis dolorum? Esse, eveniet vel!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nam! Voluptatibus voluptas error autem officiis deserunt quasi minus repellendus, doloribus, accusamus qui dolor facilis officia veritatis dolorum? Esse, eveniet vel!</li>
+        <li></li>
+    </ul>
+    <ol class="selector4">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut architecto ipsum iure mollitia incidunt, quos, non eveniet id itaque asperiores corporis, explicabo a repellat sit! Atque ad suscipit ipsam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut architecto ipsum iure mollitia incidunt, quos, non eveniet id itaque asperiores corporis, explicabo a repellat sit! Atque ad suscipit ipsam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut architecto ipsum iure mollitia incidunt, quos, non eveniet id itaque asperiores corporis, explicabo a repellat sit! Atque ad suscipit ipsam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut architecto ipsum iure mollitia incidunt, quos, non eveniet id itaque asperiores corporis, explicabo a repellat sit! Atque ad suscipit ipsam!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut architecto ipsum iure mollitia incidunt, quos, non eveniet id itaque asperiores corporis, explicabo a repellat sit! Atque ad suscipit ipsam!</li>
+    </ol>
+    <article class="selector5">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum laudantium corporis laborum quasi ex consequatur tenetur ratione, explicabo optio amet dolore ad quaerat sit suscipit itaque mollitia libero temporibus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum laudantium corporis laborum quasi ex consequatur tenetur ratione, explicabo optio amet dolore ad quaerat sit suscipit itaque mollitia libero temporibus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum laudantium corporis laborum quasi ex consequatur tenetur ratione, explicabo optio amet dolore ad quaerat sit suscipit itaque mollitia libero temporibus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum laudantium corporis laborum quasi ex consequatur tenetur ratione, explicabo optio amet dolore ad quaerat sit suscipit itaque mollitia libero temporibus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum laudantium corporis laborum quasi ex consequatur tenetur ratione, explicabo optio amet dolore ad quaerat sit suscipit itaque mollitia libero temporibus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem illum laudantium corporis laborum quasi ex consequatur tenetur ratione, explicabo optio amet dolore ad quaerat sit suscipit itaque mollitia libero temporibus?</p>
+    </article>
+    <article class="selector6">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum asperiores tempore odio doloremque molestias voluptatibus at, alias quia, fugiat odit ipsam accusamus, nihil et fugit. Quas, magnam voluptas! Animi, unde!Possimus provident praesentium consectetur similique error blanditiis obcaecati esse harum voluptatum facere. Obcaecati minus odio quas deserunt cupiditate ullam corporis voluptatibus autem necessitatibus, aspernatur quae doloribus accusantium illum est nisi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum asperiores tempore odio doloremque molestias voluptatibus at, alias quia, fugiat odit ipsam accusamus, nihil et fugit. Quas, magnam voluptas! Animi, unde!Possimus provident praesentium consectetur similique error blanditiis obcaecati esse harum voluptatum facere. Obcaecati minus odio quas deserunt cupiditate ullam corporis voluptatibus autem necessitatibus, aspernatur quae doloribus accusantium illum est nisi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum asperiores tempore odio doloremque molestias voluptatibus at, alias quia, fugiat odit ipsam accusamus, nihil et fugit. Quas, magnam voluptas! Animi, unde!Possimus provident praesentium consectetur similique error blanditiis obcaecati esse harum voluptatum facere. Obcaecati minus odio quas deserunt cupiditate ullam corporis voluptatibus autem necessitatibus, aspernatur quae doloribus accusantium illum est nisi!</p>
+    </article>
+</body> 
+</html>

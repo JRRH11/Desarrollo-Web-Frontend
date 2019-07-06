@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Master - Ejercicio  </title>
+    <style>
+        /* selector descendente */
+        article p span {
+            color: peru;
+        }
+        /* selector de clase */
+        .parrafo-2{
+            color: blue
+        }
+        .caja{
+            background-color: violet;
+        }
+        p.selecionado{
+            text-decoration: underline;
+        }
+        .text-align-center{
+            text-align: center;
+        }
+        .color-rojo{
+            color: red;
+        }
+        /* elemento seleccionado por id */
+        #seleccionar{
+            text-transform: uppercase;
+        }
+
+        /* #123 */
+        [id="123"]{
+            text-transform: capitalize;
+        }
+        
+        /* selector hijo directo */
+        article > h1{
+            background-color: tomato;
+        }
+
+        /* selector adyacente */
+        section h1 + h2{
+          background-color: blue;  
+          color: white;
+        }
+        /* selector precedente */
+        section h1 ~ h2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p class="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusantium nostrum non necessitatibus numquam pariatur quos vel laborum culpa suscipit dolor itaque sint reiciendis veniam ea unde sit, repellendus vero.
+        Perspiciatis laboriosam, sequi ullam a cumque id dignissimos commodi. Assumenda quam saepe doloribus dolor maiores porro blanditiis reprehenderit, libero unde omnis, laborum minus a. Quis nostrum excepturi asperiores quidem quaerat.
+        Rem adipisci vel eius quod, autem magnam pariatur! Ullam repudiandae commodi beatae dolore vel facilis, ducimus tempore? Cumque possimus atque iusto rem dolore officia explicabo, praesentium dolorum doloribus, architecto corrupti.
+        Aspernatur sequi reiciendis mollitia ex nemo. Exercitationem saepe cumque molestias aut minus aliquid veritatis commodi at reiciendis voluptatum vero beatae incidunt, itaque explicabo, dolor quos? Doloremque facilis optio aspernatur rerum.
+        Sapiente sit nesciunt facilis quas odio totam saepe adipisci facere fuga similique. Perspiciatis provident magnam eligendi, tempore illo, quisquam eum qui porro incidunt recusandae, voluptatem quod. Dolore provident debitis quae!
+        Numquam porro cum, maiores voluptatibus accusamus voluptas cumque iure velit, vitae iste ipsum esse ducimus, debitis tempore officiis animi enim aperiam voluptatum magni magnam corporis. Accusantium labore deserunt odio veniam.
+        Aliquid nostrum assumenda numquam blanditiis et sequi, molestiae ipsam tempore. Aliquam vel impedit asperiores odio iusto, quod, repellat repellendus sit inventore nam debitis iure id necessitatibus soluta doloremque qui quisquam. <span id="seleccionar">debitis tempore officiis animi enim aperiam</span></p>
+    </article>
+        <div class="caja">
+            <p class="parrafo-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat modi quas dolor ipsam repellat rem, dicta sit, alias, fugit optio consequatur distinctio vel vero consectetur. Iure doloremque cum iusto ipsam.
+            Libero nulla iure laboriosam cum nam quis ab harum facilis blanditiis ipsum iste, inventore esse, sunt accusantium ipsam sequi quod nihil cumque excepturi deleniti suscipit perspiciatis accusamus doloremque atque. Deleniti.
+            Blanditiis deleniti repellat, praesentium accusantium veniam vero necessitatibus laborum harum. Est veritatis optio inventore, odio qui libero nihil animi magni corrupti, praesentium in iure ratione impedit maiores. Iure, perspiciatis quas.
+            Ipsa repellat labore, eius quas et voluptates deleniti quo, quam officiis placeat sequi. Eum adipisci, et autem modi amet nam sit, iusto porro, laborum dignissimos esse maiores nostrum aliquam sed?
+            Cupiditate vero tempora voluptate blanditiis et accusamus doloremque velit fugit laudantium, maiores nulla dolore sequi? Reiciendis repudiandae, dolorem, eum consequatur nobis aperiam itaque inventore ab vero aliquam voluptates nostrum ducimus?
+            Quisquam similique rerum fugit accusantium ipsa cumque est suscipit consectetur in harum totam quam inventore dolorum nihil tenetur id, dolorem maiores aliquid impedit. Modi repellat in inventore nulla sunt voluptates.
+            Maxime modi corrupti eligendi porro odit ex. Soluta praesentium consequuntur est porro quam fugit in adipisci atque qui id optio perferendis quisquam, expedita, maiores vel error. Alias itaque accusantium assumenda.</p>
+        </div>
+        <article>
+            <p class="seleccionado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti deserunt nulla consequatur minima placeat minus natus asperiores soluta nisi, at aut sunt mollitia. Soluta delectus quasi placeat sunt iusto dolorem?Repellendus dignissimos nobis deserunt reprehenderit, ipsa soluta consectetur eius nemo error eum voluptas quam dolores non quas, sit sint nostrum doloribus nesciunt! Molestias amet veritatis assumenda soluta, accusamus sed eius?</p>
+            <p class="text-align-center color-rojo">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut reiciendis, debitis unde odio reprehenderit architecto eveniet. Inventore quisquam velit quidem amet, at culpa dolor quibusdam rem tempore accusamus soluta accusantium.Molestiae dicta animi maxime nisi tempora odio, ipsa velit eius earum modi expedita cum beatae a nemo aspernatur accusamus aliquid tenetur, nulla nam sit vitae! Cumque officiis temporibus tempora sapiente. <span class="seleccionado" id="123">velit eius earum modi expedita cum beatae a nemo aspernatur accusamus aliquid tene</span></p>
+            </p>
+        </article>
+        <article>
+            <h1>Texto dentro de mi h1</h1>
+            <p>Texto dentro de mi p</p>
+            <section>
+                <h1>Texto dentro de mi h1(section)</h1>
+                <h2>Texto dentro del h2(section)</h2>
+                <h2>Texto dentro del h2(section)</h2>
+                <p>Texto dentro de mi p(section)</p>
+            </section>
+        </article>
+</body> 
+</html>
